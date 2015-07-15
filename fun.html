@@ -76,15 +76,15 @@
         <a class="mdl-navigation__link" href="index.html">Inicio</a>
         <button id="demo-menu-lower-right"
         class="mdl-button mdl-js-button mdl-button--icon">
-  <i class="material-icons">more_vert</i>
+  <i class="material-icons">share</i>
 </button>
 
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
     for="demo-menu-lower-right">
-  <span href="https://twitter.com/share" class="mdl-menu__item">Twitter</span>
-  <span class="mdl-menu__item"><div class="fb-share-button" data-layout="link"></div>Facebook</span>
-  <span href="https://twitter.com/share" class="mdl-menu__item">Twitter</span>
-  <span href="https://twitter.com/share" class="mdl-menu__item">Twitter</span>
+    <a class="mdl-menu__item" href="http://twitter.com/home?status=<?php the_title(); ?>+<?php the_permalink(); ?&via=consultorpaim>" title="Share on Twitter" target="_blank">Twitter</a>
+<a class="mdl-menu__item" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&title=<?php the_title(); ?>" title="Share on Facebook" target="_blank">Facebook</a>
+<a class="mdl-menu__item" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" title="Share on Google Plus" target="_blank">Google +</a>
+<a class="mdl-menu__item" href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>&source=<?php bloginfo('name'); ?>" title="Share on Linkedin" target="_blank">Linkedin</a>
   </ul>
         </nav>
     </div>
