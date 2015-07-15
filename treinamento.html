@@ -64,7 +64,7 @@
   color: black;
 }
 </style>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header  mdl-layout--fixed-tabs">
+ <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header  mdl-layout--fixed-tabs">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
@@ -74,6 +74,18 @@
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <a class="mdl-navigation__link" href="index.html">Inicio</a>
+        <button id="demo-menu-lower-right"
+        class="mdl-button mdl-js-button mdl-button--icon">
+  <i class="material-icons">share</i>
+</button>
+
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-right">
+    <a class="mdl-menu__item" href="http://twitter.com/home?status=<?php the_title(); ?>+<?php the_permalink(); ?&via=consultorpaim>" title="Share on Twitter" target="_blank">Twitter</a>
+<a class="mdl-menu__item" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&title=<?php the_title(); ?>" title="Share on Facebook" target="_blank">Facebook</a>
+<a class="mdl-menu__item" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" title="Share on Google Plus" target="_blank">Google +</a>
+<a class="mdl-menu__item" href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>&source=<?php bloginfo('name'); ?>" title="Share on Linkedin" target="_blank">Linkedin</a>
+  </ul>
         </nav>
     </div>
     	    </header>
@@ -113,9 +125,8 @@
  <br />
 
 
-<a href="tel:+554797797791"><button  id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-  AGENDE
-</button></a>
+<a href="http://paim.github.io/sites">
+<button  id="view-source" class="mdl-button mdl-js-button mdl-button--fab"><i class="material-icons">apps</i></button></a>
     <script src="../../material.min.js"></script>
     
   <footer class="mdl-mini-footer mdl-mini-footer-color--blue">

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paim Consultoria</title>
     <!-- Bootstrap -->
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
     <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
          <link rel="stylesheet" href="https://github.com/pslo92/Site/blob/gh-pages/material.css" type="text/css">
           <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
@@ -16,7 +17,7 @@
      <link rel="stylesheet" href="https://github.com/pslo92/Site/blob/gh-pages/material.min.css.map">
      <link rel="stylesheet" href="https://github.com/pslo92/Site/blob/gh-pages/material.min.js">
 	<link href="https://github.com/pslo92/Site/blob/gh-pages/bootstrap2.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.blue-indigo.min.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.red-pink.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -64,7 +65,7 @@
   color: black;
 }
 </style>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header  mdl-layout--fixed-tabs">
+   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header  mdl-layout--fixed-tabs">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
@@ -74,9 +75,18 @@
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <a class="mdl-navigation__link" href="index.html">Inicio</a>
-        <a href="tel:+554797797791"><button   class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-  AGENDE
-</button></a>
+        <button id="demo-menu-lower-right"
+        class="mdl-button mdl-js-button mdl-button--icon">
+  <i class="material-icons">share</i>
+</button>
+
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-right">
+    <a class="mdl-menu__item" href="http://twitter.com/home?status=<?php the_title(); ?>+<?php the_permalink(); ?&via=consultorpaim>" title="Share on Twitter" target="_blank">Twitter</a>
+<a class="mdl-menu__item" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&title=<?php the_title(); ?>" title="Share on Facebook" target="_blank">Facebook</a>
+<a class="mdl-menu__item" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" title="Share on Google Plus" target="_blank">Google +</a>
+<a class="mdl-menu__item" href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>&source=<?php bloginfo('name'); ?>" title="Share on Linkedin" target="_blank">Linkedin</a>
+  </ul>
         </nav>
     </div>
     	    </header>
@@ -115,7 +125,7 @@
  <br />
  <br />
   <div class="mdl-grid demo-content">
-   <div class="demo-charts mdl-color--blue mdl-shadow--16dp mdl-cell mdl-cell--12-col mdl-grid">
+   <div class="demo-charts mdl-color--red mdl-shadow--16dp mdl-cell mdl-cell--12-col mdl-grid">
  <!-- Square card -->
 <style>
   .demo-card-square.mdl-card {
@@ -326,7 +336,7 @@
 </div>
 </div>
   <div class="mdl-grid demo-content">
-   <div class="demo-charts mdl-color--blue mdl-shadow--16dp mdl-cell mdl-cell--12-col mdl-grid">
+   <div class="demo-charts mdl-color--red mdl-shadow--16dp mdl-cell mdl-cell--12-col mdl-grid">
  <!-- Square card -->
 
 <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-desktop">
@@ -413,19 +423,10 @@
 
 </div>
 </div>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
-
-
-<a href="http://paim.github.io/sites">
-<button  id="view-source" class="mdl-button mdl-js-button mdl-button--fab"><i class="material-icons">apps</i></button></a>
+<a href="tel:+554797797791"><button  id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  AGENDE
+</button></a>
     <script src="../../material.min.js"></script>
     
   <footer class="mdl-mini-footer mdl-mini-footer-color--blue">
