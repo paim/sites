@@ -50,13 +50,7 @@
 
   <body>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="https://github.com/pslo92/Site/blob/gh-pages/js/jquery-1.11.2.min.js"></script>
   <script src="https://github.com/Dogfalo/materialize/blob/gh-pages/js/cards.js"></script>
@@ -112,23 +106,9 @@
 <br />
 <br />
 <br />
-<br />
-<br />
-<br />
 <!-- Square card -->
 <br  />
-<div class="demo-updates mdl-card mdl-shadow mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-<div class="fb-like"></div>
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="ofosforico">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  <g:plusone size="tall"></g:plusone>
-  <script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
+
 <br />
 <h3>&nbsp;&nbsp;  Olá a todos,
 <br />
@@ -155,10 +135,26 @@
 <br />
 <br /> 
 &nbsp;&nbsp; - Videos. 
-<br />
-<br />
  </h3>
-
+<div class="demo-updates mdl-card mdl-shadow mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+<div class="fb-like" data-layout="button_count"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="ofosforico">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <g:plusone size="tall"></g:plusone>
+  <script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 </div>
 <div class="fb-comments" data-href="http://paim.github.io/sites/maxx" data-numposts="1000"></div>
 
