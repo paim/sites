@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog Moto Maxx</title>
+    <title>Rom</title>
     <!-- Bootstrap -->
     <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
     <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
@@ -19,18 +19,8 @@
 	<link href="https://github.com/pslo92/Site/blob/gh-pages/bootstrap2.css" rel="stylesheet">
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.blue-blue.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
-   
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,23 +53,20 @@
   <script src="https://github.com/Dogfalo/materialize/blob/gh-pages/js/cards.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
-	<script src="https://github.com/pslo92/Site/blob/gh-pages/js/bootstrap.js"></script>
+
     
- 
-  
-  <style style="font-size: 14px">
+  <style>
 .layout-transparent {
-  background: url('http://img.ibxk.com.br/ns/rexposta/2014/11/16/16161112605005.jpg')  center / cover;
 }
 .layout-transparent .mdl-layout__header,
 .layout-transparent .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-  color: white;
+  color: black;
 }
 </style>
-<div class="layout-transparent mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--transparent">
+   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header  mdl-layout--fixed-tabs">
+  <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <span class="mdl-layout-title">Moto Maxx Blog</span>
@@ -87,7 +74,15 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="https://plus.google.com/u/0/105574990547725003989/posts">sobre</a>
+        <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">SOBRE
+</button>
+
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-right">
+    <a class="mdl-menu__item" href="http://twitter.com/ofosforico>" title="TWITTER" target="_blank">TWITTER</a>
+<a class="mdl-menu__item" href="https://plus.google.com/u/0/105574990547725003989>" title="GOOGLE +" target="_blank">GOOGLE +</a>
+<a class="mdl-menu__item" href="https://br.linkedin.com/pub/daniel-paim/65/5b6/a08>" title="Linkedin" target="_blank">LINKEDIN</a>
+  </ul>
       </nav>
     </div>
   </header>
@@ -97,8 +92,8 @@
       <a class="mdl-navigation__link" href="bootloader.html">BOOTLOADER</a>
       <a class="mdl-navigation__link" href="twrp.html">TWRP</a>
       <a class="mdl-navigation__link" href="root.html">ROOT</a>
-      <a class="mdl-navigation__link" href="dicas.html">ROM</a>
-      <a class="mdl-navigation__link" href="tutorial.html"></a>
+      <a class="mdl-navigation__link" href="rom.html">ROM</a>
+      <a class="mdl-navigation__link" href="videos.html"></a>
     </nav>
   </div>
        <main class="mdl-layout__content">
@@ -213,6 +208,7 @@ kitkat 4.4</button>
   })();
 </script>
 <br />
+ <br />
 </div>
 
 
@@ -237,10 +233,8 @@ kitkat 4.4</button>
     
   <footer class="mdl-mini-footer mdl-mini-footer-color--blue">
   <div class="mdl-mini-footer--center-section mdl-mini-footer-color--blue">
-    <div class="mdl-logo">Blog Moto Maxx 2015</div>
+    <div class="mdl-logo">Blog Moto Maxx 2015 - Blog realizado pela <a href="http://paim.github.io/sites/index.html"> Consultoria Paim</a> </div>
     <ul class="mdl-mini-footer--link-list">
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
     </ul>
   </div>
 </footer>
